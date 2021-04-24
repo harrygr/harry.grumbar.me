@@ -8,7 +8,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <div className="font-body min-h-screen">
       <Head>
         <title>Harry Grumbar</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       {children}
