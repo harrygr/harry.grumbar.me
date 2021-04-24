@@ -1,14 +1,21 @@
 import { Layout } from "../components/layout";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <Layout>
-      <div
-        className="bg-gray-600 bg-cover fixed h-full w-full p-8 pb-16 md:px-32 md:pt-16 text-white flex flex-col"
-        style={{
-          backgroundImage: `url("/images/daniel-leone-g30P1zcOzXo-unsplash.jpg")`,
-        }}
-      >
+      <div className="bg-gray-600 fixed  z-[-1] h-screen w-screen">
+        <Image
+          alt="Mountains"
+          src="/images/daniel-leone-g30P1zcOzXo-unsplash.jpg"
+          layout="fill"
+          objectFit="cover"
+          priority
+          quality={100}
+          className="text-transparent"
+        />
+      </div>
+      <div className="min-h-screen p-8 pb-16 md:px-32 md:pt-16 text-white flex flex-col">
         <header className="space-y-4 w-full">
           <h1 className="text-4xl font-bold tracking-tighter drop-shadow">
             Harry Grumbar
