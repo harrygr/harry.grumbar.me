@@ -1,9 +1,16 @@
 import { Layout } from "../components/layout";
 import Image from "next/image";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <Layout>
+      <Head>
+        <meta
+          name="description"
+          content="Harry Grumbar is a software engineer based in London, UK. Currently working at Bulb."
+        ></meta>
+      </Head>
       <div className="bg-gray-600 fixed z-[-1] h-screen w-screen">
         <Image
           alt="Mountains"
