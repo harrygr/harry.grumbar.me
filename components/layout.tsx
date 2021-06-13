@@ -5,7 +5,7 @@ interface Props {}
 
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="font-body min-h-screen">
+    <div className="font-body">
       <Head>
         <title>Harry Grumbar</title>
         <link rel="icon" href="/favicon.svg" />
