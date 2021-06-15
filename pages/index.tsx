@@ -2,6 +2,8 @@ import { Layout } from "../components/layout";
 import Image from "next/image";
 import Head from "next/head";
 
+import bg from "./daniel-leone-g30P1zcOzXo-unsplash.jpg";
+
 const Home = () => {
   return (
     <Layout>
@@ -12,23 +14,14 @@ const Home = () => {
         ></meta>
       </Head>
       <div className="bg-gray-600 fixed z-[-1] h-screen w-screen">
-        <div
-          className="absolute inset-0 filter blur-2xl transform scale-150"
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, rgb(75,116,123) 25%,rgb(103,144,150) 25% 50%,rgb(124,164,168) 50% 75%,rgb(139,180,184) 75% 100%),linear-gradient(90deg, rgb(35,58,63) 25%,rgb(41,66,71) 25% 50%,rgb(51,78,82) 50% 75%,rgb(72,97,98) 75% 100%)",
-            backgroundPosition: "0 0 ,0 100%",
-            backgroundSize: "100% 50%",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
         <Image
           alt="Mountains"
-          src="/images/daniel-leone-g30P1zcOzXo-unsplash.jpg"
+          src={bg}
           layout="fill"
           objectFit="cover"
           priority
           quality={100}
+          placeholder="blur"
           className="text-transparent"
         />
       </div>
