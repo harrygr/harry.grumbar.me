@@ -25,6 +25,7 @@ const main = async () => {
   console.log(`HTML file built: file://${htmlLocation}`);
 
   console.log("⚙️  Rendering PDF");
+
   const pdf = await buildPdf(output);
   const pdfLocation = path.resolve(outputDirectory, "cv.pdf");
   fs.writeFileSync(pdfLocation, pdf);
@@ -41,6 +42,7 @@ const buildPdf = async (html: string) => {
   });
   const page = await browser.newPage();
   await page.setContent(html, { waitUntil: "networkidle0" });
+  await page.evaluateHandle("document.fonts.ready");
   const pdf = await page.pdf({
     format: "a4",
     printBackground: true,
