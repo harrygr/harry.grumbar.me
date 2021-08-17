@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "yarn build-cv && next build",
+    "start": "next start",
+    "build-cv": "ts-node --project tsconfig.cv.json ./scripts/build-cv.tsx"
   },
   "dependencies": {
     "next": "^11.0.0",
@@ -15,8 +16,11 @@
   "devDependencies": {
     "@types/react": "^17.0.3",
     "autoprefixer": "^10.2.5",
+    "date-fns": "^2.23.0",
     "postcss": "^8.2.12",
+    "puppeteer": "^10.2.0",
     "tailwindcss": "^2.1.1",
-    "typescript": "^4.2.4"
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
   }
 }

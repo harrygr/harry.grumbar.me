@@ -61,6 +61,11 @@ const Home = () => {
                 Email
               </a>
             </li>
+            <li className="inline-block">
+              <a href="/cv.html" target="_blank">
+                CV
+              </a>
+            </li>
           </ul>
         </nav>
         <p>&copy; 2020</p>
