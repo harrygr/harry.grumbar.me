@@ -3,47 +3,28 @@ import Image from "next/image";
 import Head from "next/head";
 
 import bg from "./daniel-leone-g30P1zcOzXo-unsplash.jpg";
+import { useThemeColor } from "../hooks/useThemeColor";
 
 const Home = () => {
+  useThemeColor("#65909b");
+
   return (
     <Layout>
       <Head>
         <meta
           name="description"
-          content="Harry Grumbar is a software engineer based in London, UK. Currently working at Bulb."
+          content="Harry Grumbar is a software engineer based in London."
         ></meta>
       </Head>
-      <div className="bg-gray-600 fixed z-[-1] h-screen w-screen">
-        <Image
-          alt="Mountains"
-          src={bg}
-          layout="fill"
-          objectFit="cover"
-          priority
-          quality={100}
-          placeholder="blur"
-          className="text-transparent"
-        />
-      </div>
 
       <header className="space-y-4 w-full p-8 md:px-32 md:pt-16 text-white">
         <h1 className="text-4xl font-bold tracking-tighter drop-shadow">
           Harry Grumbar
         </h1>
-        <p>
-          Software Engineer based in London, UK. Currently working at{" "}
-          <a
-            href="https://bulb.co.uk"
-            target="_blank"
-            className="hover:text-gray-200 underline"
-          >
-            Bulb
-          </a>
-          .
-        </p>
+        <p>Software Engineer based in London.</p>
       </header>
 
-      <footer className="w-full mt-auto text-sm flex justify-between fixed bottom-0 inset-x-0 p-8 md:px-32 pb-16 text-white">
+      <footer className="w-full mt-auto text-sm flex justify-between xfixed xbottom-0 xinset-x-0 p-8 md:px-32 text-white">
         <nav>
           <ul className="space-x-4">
             <li className="inline-block">
@@ -70,6 +51,19 @@ const Home = () => {
         </nav>
         <p>&copy; 2020</p>
       </footer>
+
+      <div className="bg-gray-600 fixed z-[-1] h-full w-full">
+        <Image
+          alt="Mountains"
+          src={bg}
+          layout="fill"
+          objectFit="cover"
+          priority
+          quality={100}
+          placeholder="blur"
+          className="text-transparent"
+        />
+      </div>
     </Layout>
   );
 };
