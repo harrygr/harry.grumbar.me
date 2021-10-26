@@ -4,27 +4,32 @@ import Head from "next/head";
 
 import bg from "./daniel-leone-g30P1zcOzXo-unsplash.jpg";
 import { useThemeColor } from "../hooks/useThemeColor";
+import { SiteNav } from "../components/SiteNav";
 
 const Home = () => {
   useThemeColor("#65909b");
 
   return (
-    <Layout>
+    <>
       <Head>
+        <title>Harry Grumbar</title>
         <meta
           name="description"
           content="Harry Grumbar is a software engineer based in London."
         ></meta>
       </Head>
 
-      <header className="space-y-4 w-full p-8 md:px-32 md:pt-16 text-white">
-        <h1 className="text-4xl font-bold tracking-tighter drop-shadow">
-          Harry Grumbar
-        </h1>
-        <p>Software Engineer based in London.</p>
+      <header className="w-full p-8 md:px-32 md:pt-16 text-white sm:flex flex-row-reverse justify-between">
+        <SiteNav className="sm:ml-6 sm:flex sm:justify-end mb-6" />
+        <div className="space-y-4 ">
+          <h1 className="text-4xl font-bold tracking-tighter drop-shadow">
+            Harry Grumbar
+          </h1>
+          <p>Software Engineer based in London.</p>
+        </div>
       </header>
 
-      <footer className="w-full mt-auto text-sm flex justify-between xfixed xbottom-0 xinset-x-0 p-8 md:px-32 text-white">
+      <footer className="w-full mt-auto text-sm flex justify-between xfixed xbottom-0 xinset-x-0 p-8 md:px-32 pb-12 text-white">
         <nav>
           <ul className="space-x-4">
             <li className="inline-block">
@@ -64,7 +69,7 @@ const Home = () => {
           className="text-transparent"
         />
       </div>
-    </Layout>
+    </>
   );
 };
 
