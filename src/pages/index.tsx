@@ -1,10 +1,10 @@
-import { Layout } from "../components/layout";
 import Image from "next/image";
 import Head from "next/head";
 
 import bg from "./daniel-leone-g30P1zcOzXo-unsplash.jpg";
 import { useThemeColor } from "../hooks/useThemeColor";
 import { SiteNav } from "../components/SiteNav";
+import { SiteFooter } from "../components/SiteFooter";
 
 const Home = () => {
   useThemeColor("#65909b");
@@ -29,33 +29,7 @@ const Home = () => {
         </div>
       </header>
 
-      <footer className="w-full mt-auto text-sm flex justify-between xfixed xbottom-0 xinset-x-0 p-8 md:px-32 pb-12 text-white">
-        <nav>
-          <ul className="space-x-4">
-            <li className="inline-block">
-              <a href="https://twitter.com/harrygrumbar" target="_blank">
-                Twitter
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="https://github.com/harrygr" target="_blank">
-                Github
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="mailto:harry@grumbar.me" target="_blank">
-                Email
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="/cv.html" target="_blank">
-                CV
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <p>&copy; 2020</p>
-      </footer>
+      <SiteFooter className="text-white p-8 md:px-32" />
 
       <div className="bg-gray-600 fixed z-[-1] h-full w-full">
         <Image

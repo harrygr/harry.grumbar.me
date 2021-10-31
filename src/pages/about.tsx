@@ -1,8 +1,14 @@
 import { Layout } from "../components/layout";
+import Head from "next/head";
 
 const About: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>About | Harry Grumbar</title>
+        <meta name="description" content="About Harry Grumbar"></meta>
+      </Head>
+
       <header className="w-full mb-8">
         <h1 className="text-4xl font-bold tracking-tighter text-gray-800">
           About
@@ -17,7 +23,7 @@ const About: React.FC = () => {
 
         <p>
           I'm currently working on building{" "}
-          <a href="https://matchhaus.io" target="_blank">
+          <a href="https://matchhaus.io" target="_blank" title="Matchhaus">
             MatchHaus
           </a>
           , a network for team sport.
@@ -25,13 +31,18 @@ const About: React.FC = () => {
 
         <p>
           In my previous role I worked at{" "}
-          <a href="https://bulb.co.uk" target="_blank">
+          <a href="https://bulb.co.uk" target="_blank" title="Bulb">
             Bulb
           </a>
-          , the fastest growing company in the UK. I spent over 2 years building
-          Bulb's core member-facing products before working on improving their
-          security and fraud-prevention technologies. During my time there
-          Bulb's member based increased from 100,000 to over 1.6 million.
+          , the fastest growing company in the UK. I spent over 3 years building
+          Bulb's core member-facing products, new payment systems, security
+          &amp; fraud prevention, and revenue assurance automation as the
+          company went through a period of hyper-growth.
+        </p>
+
+        <p>
+          During my time at Bulb their member based increased from 100,000 to
+          over 1.6 million.
         </p>
 
         <p>
