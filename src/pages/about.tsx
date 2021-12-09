@@ -18,7 +18,7 @@ const About: React.FC = () => {
       <article className="prose">
         <p>
           Hey, I'm Harry, a London-based software engineer who loves using
-          technology to build incredible products that people love using.
+          technology to build incredible products that people love to use.
         </p>
 
         <p>
@@ -41,7 +41,7 @@ const About: React.FC = () => {
         </p>
 
         <p>
-          During my time at Bulb their member based increased from 100,000 to
+          During my time at Bulb their member base increased from 100,000 to
           over 1.6 million.
         </p>
 
