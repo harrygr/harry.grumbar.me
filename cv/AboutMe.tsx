@@ -11,14 +11,16 @@ export const AboutMe: React.FC = () => {
     <section>
       <h2 id="about-me">About Me</h2>
       <p>
-        I'm a full-stack developer based in London. I have strengths in
-        front-end development using popular libraries and over {yearsExperience}{" "}
-        years' experience building and delivering software.
+        I'm a software engineer based in London. I have strengths working in
+        agile teams using industry-standard tools and libraries with over{" "}
+        {yearsExperience} years' experience building and delivering software.
       </p>
       <p>
-        Having worked in highly FP-oriented teams I am a strong proponent of
-        functional programming in modern scalable applications. A focus on
-        testable and predictable code is core to my programming principles.
+        I have experience modeling complex domains for backend systems and a
+        focus on testable and predictable code is core to my programming
+        principles. I'm a strong proponent of functional programming in modern
+        scalable applications and believe it results in fewer bugs, easier
+        testing and more comprehensible code.
       </p>
       <p>
         When building for the front-end I enjoy using React with which I work
@@ -27,9 +29,10 @@ export const AboutMe: React.FC = () => {
         of one's code and helps and greatly reduces the number of errors.
       </p>
       <p>
-        When I'm not building React apps I also enjoy tinkering with server
-        applications in Node and Elixir as well as working on open-source
-        projects.
+        For the backend I have extensive experience building Node server
+        applications with microservice architectures, although I am a proponent
+        of using monolithic backends when the situation calls for it. For this
+        I've found I can be very productive with Elixir's Phoenix framework.
       </p>
     </section>
   );

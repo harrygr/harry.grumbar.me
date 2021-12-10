@@ -8,7 +8,7 @@ export const Goodlord: React.FC = () => {
         mainly responsible for building web user interfaces for the principle
         products, "Pro" and "Direct", that serve the users of Goodlord, a
         platform for streamlining the process of letting a property. We worked
-        in small squads following agile principles delivering iterative work as
+        in small squads following agile principles delivering fast prototypes as
         well as infrastructure and dev-ops improvements.
       </p>
       <ul>
@@ -24,9 +24,7 @@ export const Goodlord: React.FC = () => {
         </li>
         <li>
           Championed the usage of atomic and functional styles to help control
-          the CSS footprint of our applications. We also experimented with
-          css-in-js approaches to further improve code reusability and
-          componentisation.
+          the CSS footprint of our applications.
         </li>
         <li>
           Participated in team "guilds" (Functional Programming, Front-End Dev,

@@ -6,33 +6,33 @@ export const Bulb = () => {
       <p>
         Bulb is a renewable energy provider that heavily relies on its
         technology to differentiate itself from the competition. Among the first
-        full-time engineers to be hired I've worked across a number of areas of
-        the business delivering software and working cross-functionally to help
-        shape and develop new products.
-      </p>
-      <p>
-        We make extensive use of data to drive the way we design features. New
-        features are often rolled out as experiments using toggles while we
-        measure their performance.
+        full-time engineers to be hired I've built products serving millions of
+        users as well as helped shaped the engineering culture while the company
+        went though a period of hyper-growth.
       </p>
 
       <p>A few of the projects and responsibilities I've been involved with:</p>
       <ul>
         <li>
+          Developed and evolved Bulb's core member-facing account products, with
+          a focus on accessibility, security, and performance.
+        </li>
+        <li>
           Designed and built a new business-critical payment system (Bulb Pay)
-          on urgent timelines.
+          to allow members to effortlessly make payments on their accounts.
         </li>
         <li>
           Re-architected and designed new authentication infrastructure to allow
           members to access their Bulb accounts more easily and securely.
         </li>
         <li>
-          Built complex back-end tasks to detect and manage revenue-related
-          issues. These jobs involved processing large volumes of data
-          efficiently and reconciling state changes between runs.
+          Built complex automation to improve revenue collection and keep member
+          account balances healthy. These services involved processing large
+          volumes of data efficiently and reconciling state changes between
+          runs.
         </li>
         <li>
-          Been extensively involved in techical hiring and interviewing, and
+          Been extensively involved in technical hiring and interviewing, and
           mentoring junior developers.
         </li>
       </ul>

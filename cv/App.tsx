@@ -5,6 +5,7 @@ import { Goodlord } from "./experience/Goodlord";
 import { Bulb } from "./experience/Bulb";
 import { Section } from "./components/Section";
 import { IconListItem } from "./components/IconListItem";
+import { Matchhaus } from "./experience/Matchhaus";
 
 export function App() {
   return (
@@ -18,8 +19,16 @@ export function App() {
           <h2 id="experience">Experience</h2>
 
           <Section
-            title="Software Engineer"
-            date="May 2018 - Present"
+            title="Co-founder/CTO"
+            date="October 2021 - Present"
+            location="Matchhaus"
+          >
+            <Matchhaus />
+          </Section>
+
+          <Section
+            title="Senior Software Engineer"
+            date="May 2018 - September 2021"
             location="Bulb"
           >
             <Bulb />
@@ -53,14 +62,10 @@ export function App() {
           <h2 id="skills-and-interests">Skills and Interests</h2>
 
           <p>
-            I enjoy spending my time keeping up to speed with the latest
-            developments in tech and the software startup world as well as
-            trying to further my programming abilities such as delving into
-            category theory and FP principles.
-          </p>
-          <p>
-            I am also a keen sportsman and particularly enjoy cycling, tennis,
-            skiing, and football as well as being an avid traveller.
+            I'm a keen sportsman and particularly enjoy cycling, tennis, hocker
+            and football. I love the outdoors; one of my passions is
+            back-country skiing and ski-touring, when travel and conditions
+            allow it!
           </p>
         </main>
         <aside className="cell" style={{ paddingLeft: 10 }}>
@@ -86,15 +91,15 @@ export function App() {
           <h2 id="programming">Programming</h2>
 
           <ul>
-            <li>JavaScript/Node</li>
-            <li>TypeScript</li>
-            <li>React</li>
+            <li>JavaScript/TypeScript/Node</li>
+            <li>React/Next.js</li>
             <li>Kubernetes</li>
             <li>Elixir/Phoenix</li>
-            <li>Elm</li>
+            <li>GraphQL/REST API design</li>
             <li>Docker</li>
             <li>Git</li>
             <li>GCP/AWS/Cloud</li>
+            <li>Agile Methodologies (Scrum/Kanban)</li>
           </ul>
         </aside>
       </div>
