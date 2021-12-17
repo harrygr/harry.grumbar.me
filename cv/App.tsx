@@ -62,7 +62,7 @@ export function App() {
           <h2 id="skills-and-interests">Skills and Interests</h2>
 
           <p>
-            I'm a keen sportsman and particularly enjoy cycling, tennis, hocker
+            I'm a keen sportsman and particularly enjoy cycling, tennis, hockey
             and football. I love the outdoors; one of my passions is
             back-country skiing and ski-touring, when travel and conditions
             allow it!

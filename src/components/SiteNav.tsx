@@ -8,9 +8,6 @@ interface Props {
 export const SiteNav: React.FC<Props> = ({ className = "" }) => {
   return (
     <nav className={`text-lg space-x-6 ${className}`}>
-      <Link href="/about">
-        <a className="opacity-70 hover:opacity-100">About</a>
-      </Link>
       <Link href="/contact">
         <a className="opacity-70 hover:opacity-100">Contact</a>
       </Link>
