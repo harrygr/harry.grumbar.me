@@ -73,13 +73,11 @@ export function App() {
           <ul className="list-reset">
             <IconListItem icon="map-marker">London, UK</IconListItem>
             <IconListItem icon="envelope-o">harry@grumbar.me</IconListItem>
+            <IconListItem icon="globe">
+              <a href="https://harry.grumbar.me">harry.grumbar.me</a>
+            </IconListItem>
             <IconListItem icon="github">
               <a href="https://github.com/harrygr">github.com/harrygr</a>
-            </IconListItem>
-            <IconListItem icon="stack-overflow">
-              <a href="https://stackoverflow.com/story/harryg">
-                stackoverflow.com/story/harryg
-              </a>
             </IconListItem>
           </ul>
 
