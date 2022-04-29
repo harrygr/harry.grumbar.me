@@ -26,13 +26,14 @@ export const AboutMe: React.FC = () => {
         When building for the front-end I enjoy using React with which I work
         with almost exclusively in TypeScript. I am a strong believer that a
         modern type system and compiler brings many benefits to the reliability
-        of one's code and helps and greatly reduces the number of errors.
+        of one&apos;s code and helps and greatly reduces the number of errors.
       </p>
       <p>
         For the backend I have extensive experience building Node server
         applications with microservice architectures, although I am a proponent
         of using monolithic backends when the situation calls for it. For this
-        I've found I can be very productive with Elixir's Phoenix framework.
+        I&apos;ve found I can be very productive with Elixir&apos;s Phoenix
+        framework.
       </p>
     </section>
   );

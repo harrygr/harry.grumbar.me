@@ -12,17 +12,25 @@ export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
       <nav>
         <ul className="space-x-4">
           <li className="inline-block">
-            <a href="https://twitter.com/harrygrumbar" target="_blank">
+            <a
+              href="https://twitter.com/harrygrumbar"
+              target="_blank"
+              rel="noreferrer"
+            >
               Twitter
             </a>
           </li>
           <li className="inline-block">
-            <a href="https://github.com/harrygr" target="_blank">
+            <a
+              href="https://github.com/harrygr"
+              target="_blank"
+              rel="noreferrer"
+            >
               Github
             </a>
           </li>
           <li className="inline-block">
-            <a href="mailto:harry@grumbar.me" target="_blank">
+            <a href="mailto:harry@grumbar.me" target="_blank" rel="noreferrer">
               Email
             </a>
           </li>
@@ -33,7 +41,7 @@ export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
           </li>
         </ul>
       </nav>
-      <p className="text-gray-400">&copy; 2020</p>
+      <p className="text-gray-400">&copy; 2021</p>
     </footer>
   );
 };

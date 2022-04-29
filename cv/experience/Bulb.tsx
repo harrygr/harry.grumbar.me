@@ -6,16 +6,18 @@ export const Bulb = () => {
       <p>
         Bulb is a renewable energy provider that heavily relies on its
         technology to differentiate itself from the competition. Among the first
-        full-time engineers to be hired I've built products serving millions of
-        users as well as helped shaped the engineering culture while the company
-        went though a period of hyper-growth.
+        full-time engineers to be hired I&apos;ve built products serving
+        millions of users as well as helped shaped the engineering culture while
+        the company went though a period of hyper-growth.
       </p>
 
-      <p>A few of the projects and responsibilities I've been involved with:</p>
+      <p>
+        A few of the projects and responsibilities I&apos;ve been involved with:
+      </p>
       <ul>
         <li>
-          Developed and evolved Bulb's core member-facing account products, with
-          a focus on accessibility, security, and performance.
+          Developed and evolved Bulb&apos;s core member-facing account products,
+          with a focus on accessibility, security, and performance.
         </li>
         <li>
           Designed and built a new business-critical payment system (Bulb Pay)

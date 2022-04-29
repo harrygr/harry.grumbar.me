@@ -20,7 +20,12 @@ const Home: React.FC = () => {
 
         <p>
           I'm currently working on building{" "}
-          <a href="https://matchhaus.io" target="_blank" title="Matchhaus">
+          <a
+            href="https://matchhaus.io"
+            target="_blank"
+            title="Matchhaus"
+            rel="noreferrer"
+          >
             MatchHaus
           </a>
           , a network for team sport.
@@ -28,7 +33,12 @@ const Home: React.FC = () => {
 
         <p>
           In my previous role I worked at{" "}
-          <a href="https://bulb.co.uk" target="_blank" title="Bulb">
+          <a
+            href="https://bulb.co.uk"
+            target="_blank"
+            title="Bulb"
+            rel="noreferrer"
+          >
             Bulb
           </a>
           , the fastest growing company in the UK. I spent over 3 years building
@@ -44,7 +54,7 @@ const Home: React.FC = () => {
 
         <p>
           And before that I worked at{" "}
-          <a href="https://goodlord.co" target="_blank">
+          <a href="https://goodlord.co" target="_blank" rel="noreferrer">
             Goodlord
           </a>
           , a proptech startup, building tools to streamline and take the pain
