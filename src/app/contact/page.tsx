@@ -1,4 +1,4 @@
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <>
       <header className="w-full mb-8">
