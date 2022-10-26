@@ -34,3 +34,7 @@ yarn-error.log*
 .vercel
 
 .vscode
+
+# generated CV assets
+public/cv.html
+public/cv.pdf
