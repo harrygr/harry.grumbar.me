@@ -1,13 +1,6 @@
-import { Layout } from "../components/layout";
-import Head from "next/head";
-
 const Contact: React.FC = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Contact | Harry Grumbar</title>
-        <meta name="description" content="How to contact Harry Grumbar"></meta>
-      </Head>
+    <>
       <header className="w-full mb-8">
         <h1 className="text-4xl font-bold tracking-tighter text-gray-800">
           Contact
@@ -32,7 +25,7 @@ const Contact: React.FC = () => {
           </li>
         </ul>
       </article>
-    </Layout>
+    </>
   );
 };
 
