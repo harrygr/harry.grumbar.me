@@ -1,1 +1,1 @@
-module.exports = { swcMinify: true };
+module.exports = { swcMinify: true, experimental: { appDir: true } };
