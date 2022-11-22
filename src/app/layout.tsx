@@ -1,14 +1,16 @@
 import Link from "next/link";
 import React from "react";
+import { Inter } from "@next/font/google";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteNav } from "../components/SiteNav";
 
 import "../styles/globals.css";
-import "../styles/inter.css";
+
+const inter = Inter({ variable: "--font-inter" });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html className="h-full" lang="en">
+    <html className={`h-full ${inter.className}`} lang="en">
       <head>
         <link rel="icon" href="/favicon.svg" />
         <meta name="theme-color" content="#fff" />

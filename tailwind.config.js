@@ -3,7 +3,7 @@ module.exports = {
   mode: "jit",
   theme: {
     fontFamily: {
-      body: ["Inter", "sans-serif"],
+      body: ["var(--font-inter)", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/typography")],
