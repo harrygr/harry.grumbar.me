@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface SectionProps {
-  title: string;
+  title?: string;
   date: string;
   location: string;
 }
@@ -17,7 +17,8 @@ export const Section: React.FC<SectionProps> = ({
       <header>
         <h3>{location}</h3>
         <p>
-          {title} / {date}
+          {title ? `${title} / ` : ""}
+          {date}
         </p>
       </header>
       {children ? <article>{children}</article> : null}

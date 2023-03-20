@@ -6,6 +6,7 @@ import { Bulb } from "./experience/Bulb";
 import { Section } from "./components/Section";
 import { IconListItem } from "./components/IconListItem";
 import { Matchhaus } from "./experience/Matchhaus";
+import { Contractor } from "./experience/Contractor";
 
 export function App() {
   return (
@@ -17,6 +18,10 @@ export function App() {
           <hr />
 
           <h2 id="experience">Experience</h2>
+
+          <Section date="May 2022 - Present" location="Independent Contractor">
+            <Contractor />
+          </Section>
 
           <Section
             title="Co-founder/CTO"
@@ -64,8 +69,8 @@ export function App() {
           <p>
             I'm a keen sportsman and particularly enjoy cycling, tennis, hockey
             and football. I love the outdoors; one of my passions is
-            back-country skiing and ski-touring, when travel and conditions
-            allow it!
+            back-country skiing & ski-touring and exploring wild and extreme
+            locations.
           </p>
         </main>
         <aside className="cell" style={{ paddingLeft: 10 }}>
@@ -90,7 +95,7 @@ export function App() {
 
           <ul>
             <li>JavaScript/TypeScript/Node</li>
-            <li>React/Next.js</li>
+            <li>React/Next.js/Remix</li>
             <li>Kubernetes</li>
             <li>Elixir/Phoenix</li>
             <li>GraphQL/REST API design</li>

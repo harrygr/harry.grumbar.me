@@ -4,7 +4,7 @@ export const Bulb = () => {
   return (
     <div>
       <p>
-        Bulb is a renewable energy provider that heavily relies on its
+        Bulb was a renewable energy provider that heavily relied on its
         technology to differentiate itself from the competition. Among the first
         full-time engineers to be hired I&apos;ve built products serving
         millions of users as well as helped shaped the engineering culture while

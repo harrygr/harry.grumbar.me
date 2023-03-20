@@ -4,7 +4,7 @@ export const Matchhaus = () => {
   return (
     <div>
       <p>
-        <a href="https://matchhaus.io" target="_blank">
+        <a href="https://matchhaus.io" target="_blank" rel="noreferrer">
           Matchhaus
         </a>{" "}
         is a network for sports teams. It allows players to plan and manage
