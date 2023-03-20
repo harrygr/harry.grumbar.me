@@ -6,7 +6,7 @@ import { SiteNav } from "../components/SiteNav";
 
 import "../styles/globals.css";
 
-const inter = Inter({ variable: "--font-inter" });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
