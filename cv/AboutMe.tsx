@@ -13,7 +13,8 @@ export const AboutMe: React.FC = () => {
       <p>
         I'm a software engineer based in London. I have strengths working in
         agile teams using industry-standard tools and libraries with over{" "}
-        {yearsExperience} years' experience building and delivering software.
+        {yearsExperience} years' experience building and delivering software
+        professionally.
       </p>
       <p>
         I have experience modeling complex domains for backend systems and a
@@ -23,17 +24,9 @@ export const AboutMe: React.FC = () => {
         testing and more comprehensible code.
       </p>
       <p>
-        When building for the front-end I enjoy using React with which I work
-        with almost exclusively in TypeScript. I am a strong believer that a
-        modern type system and compiler brings many benefits to the reliability
-        of one&apos;s code and helps and greatly reduces the number of errors.
-      </p>
-      <p>
-        For the backend I have extensive experience building Node server
-        applications with microservice architectures, although I am a proponent
-        of using monolithic backends when the situation calls for it. For this
-        I&apos;ve found I can be very productive with Elixir&apos;s Phoenix
-        framework.
+        I've led small product engineering teams and have extensive experience
+        with prioritising workloads, managing backlogs, and working
+        collaboratively with product to effectively deliver working software.
       </p>
     </section>
   );

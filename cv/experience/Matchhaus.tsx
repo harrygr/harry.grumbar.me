@@ -14,9 +14,10 @@ export const Matchhaus = () => {
 
       <p>
         I created Matchhaus as a side project with a friend back in 2019 and
-        have been working on it full time since October 2021. We've managed to
-        accumulate several thousand regular active users, including a number of
-        paid subscribers.
+        worked on it full time for a period of around six months. We've managed
+        to accumulate several thousand regular active users, including a number
+        of paid subscribers, and raised enough capital to sustain the product
+        for the forseeable future.
       </p>
     </div>
   );

@@ -6,7 +6,7 @@ import { Bulb } from "./experience/Bulb";
 import { Section } from "./components/Section";
 import { IconListItem } from "./components/IconListItem";
 import { Matchhaus } from "./experience/Matchhaus";
-import { Contractor } from "./experience/Contractor";
+import { Scan } from "./experience/Scan";
 
 export function App() {
   return (
@@ -19,8 +19,8 @@ export function App() {
 
           <h2 id="experience">Experience</h2>
 
-          <Section date="May 2022 - Present" location="Independent Contractor">
-            <Contractor />
+          <Section date="May 2022 - Dec 2022" location="Scan.com">
+            <Scan />
           </Section>
 
           <Section
@@ -68,8 +68,8 @@ export function App() {
 
           <p>
             I'm a keen sportsman and particularly enjoy cycling, tennis, hockey
-            and football. I love the outdoors; one of my passions is
-            back-country skiing & ski-touring and exploring wild and extreme
+            and football. I love the outdoors; one of my passions is backcountry
+            skiing & ski-mountaineering and exploring wild and extreme
             locations.
           </p>
         </main>
