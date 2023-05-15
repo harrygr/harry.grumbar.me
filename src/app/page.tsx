@@ -1,4 +1,12 @@
+import differenceInYears from "date-fns/differenceInYears";
+import React from "react";
+
 const Home = () => {
+  const yearsExperience = React.useMemo(
+    () => differenceInYears(new Date(Date.now()), new Date(2014, 6, 1)),
+    []
+  );
+
   return (
     <article className="prose">
       <p>
@@ -7,7 +15,10 @@ const Home = () => {
       </p>
 
       <p>
-        I'm currently working on building{" "}
+        With over {yearsExperience} years of experience building and delivering
+        software projects I know what it takes to be part of a successful
+        engineering team shipping great products. I have also co-founded my own
+        software startup,{" "}
         <a
           href="https://matchhaus.io"
           target="_blank"
@@ -16,7 +27,7 @@ const Home = () => {
         >
           MatchHaus
         </a>
-        , a network for team sport.
+        .
       </p>
 
       <p>
