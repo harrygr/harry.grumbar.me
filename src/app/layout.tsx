@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           async
           defer
           data-website-id="049a950f-3150-4194-a086-64da434ce6d1"
-          src="https://umami-hg.fly.dev/umami.js"
+          src="https://umami-hg.fly.dev/script.js"
         ></script>
       </head>
       <body className="h-full antialiased font-body">
