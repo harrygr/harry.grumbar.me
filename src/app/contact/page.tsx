@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Harry Grumbar | Contact",
+  description: "How to contact Harry Grumbar",
+};
+
 const Contact = () => {
   return (
     <>

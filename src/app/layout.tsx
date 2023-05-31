@@ -8,6 +8,17 @@ import "../styles/globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
+export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL ||
+      process.env.VERCEL_URL ||
+      `http://localhost:${process.env.PORT ?? "3000"}`
+  ),
+  alternates: {
+    canonical: "./",
+  },
+};
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html className={`h-full ${inter.className}`} lang="en">

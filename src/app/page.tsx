@@ -1,5 +1,12 @@
 import differenceInYears from "date-fns/differenceInYears";
+
 import React from "react";
+
+export const metadata = {
+  title: "Harry Grumbar | London-based software engineer",
+  description:
+    "Harry Grumbar is a software engineer and technical co-founder based in London with skills in front and back-end web development, cloud services and agile working methods. He has experience delivering high-quality software to millions of users across a range of industries.",
+};
 
 const Home = () => {
   const yearsExperience = React.useMemo(
