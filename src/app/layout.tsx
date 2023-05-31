@@ -32,7 +32,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           src="https://umami-hg.fly.dev/script.js"
         ></script>
       </head>
-      <body className="h-full antialiased font-body">
+      <body className="h-full antialiased font-body text-gray-900">
         <div className="container mx-auto p-8 md:px-32 md:pt-16 h-full flex flex-col flex-1">
           <header className="mb-8 flex justify-between items-center">
             <Link href="/" className="text-2xl uppercase font-light">
