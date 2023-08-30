@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "yarn build-cv && next build",
     "start": "next start",
-    "build-cv": "ts-node --project tsconfig.cv.json ./scripts/build-cv.tsx",
+    "build-cv": "tsx ./scripts/build-cv.tsx",
     "predev": "echo 'STARTING ✅'"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "postcss": "^8.4.4",
     "puppeteer": "^10.2.0",
     "tailwindcss": "^3.1.5",
-    "ts-node": "^10.2.0",
+    "tsx": "^3.12.7",
     "typescript": "^4.3.5"
   }
 }
