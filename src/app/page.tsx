@@ -3,9 +3,9 @@ import differenceInYears from "date-fns/differenceInYears";
 import React from "react";
 
 export const metadata = {
-  title: "Harry Grumbar | London-based software engineer",
+  title: "Harry Grumbar | London-based product engineer",
   description:
-    "Harry Grumbar is a software engineer and technical co-founder based in London with skills in front and back-end web development, cloud services and agile working methods. He has experience delivering high-quality software to millions of users across a range of industries.",
+    "Harry Grumbar is a product engineer and technical co-founder based in London with skills in front and back-end web development, cloud services and agile working methods. He has experience delivering high-quality software to millions of users across a range of industries.",
 };
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <article className="prose">
       <p>
-        Hi, I'm Harry, a London-based software engineer who loves using
+        Hi, I'm Harry, a London-based product engineer who loves using
         technology to build incredible products that people love to use.
       </p>
 
@@ -38,7 +38,7 @@ const Home = () => {
       </p>
 
       <p>
-        In my previous role I worked at{" "}
+        In a previous role I worked at{" "}
         <a
           href="https://bulb.co.uk"
           target="_blank"

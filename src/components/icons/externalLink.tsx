@@ -5,6 +5,7 @@ export const ExternalLink = (props: React.ComponentProps<"svg">) => {
       viewBox="0 0 20 20"
       fill="currentColor"
       className="w-5 h-5"
+      aria-hidden="true"
       {...props}
     >
       <path

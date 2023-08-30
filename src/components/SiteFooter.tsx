@@ -4,6 +4,8 @@ interface Props {
   className?: string;
 }
 
+const currentYear = new Date().getFullYear();
+
 export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
   return (
     <footer
@@ -41,7 +43,7 @@ export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
           </li>
         </ul>
       </nav>
-      <p className="text-gray-400">&copy; 2021</p>
+      <p className="text-gray-400">&copy; {currentYear}</p>
     </footer>
   );
 };
