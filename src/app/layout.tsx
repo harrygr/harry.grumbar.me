@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteNav } from "../components/SiteNav";
 
