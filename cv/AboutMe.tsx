@@ -11,10 +11,9 @@ export const AboutMe: React.FC = () => {
     <section>
       <h2 id="about-me">About Me</h2>
       <p>
-        I'm a software engineer based in London. I have strengths working in
-        agile teams using industry-standard tools and libraries with over{" "}
-        {yearsExperience} years' experience building and delivering software
-        professionally.
+        I'm a full-stack product engineer with strengths working in agile teams
+        using industry-standard tools and libraries with over {yearsExperience}{" "}
+        years' experience building and delivering software professionally.
       </p>
       <p>
         I have experience modeling complex domains for backend systems and a

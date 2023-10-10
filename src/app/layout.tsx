@@ -19,7 +19,11 @@ export const metadata = {
   },
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const RootLayout = ({ children }: Props) => {
   return (
     <html className={`h-full ${inter.className}`} lang="en">
       <head>
@@ -35,9 +39,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className="h-full antialiased font-body text-gray-900">
         <div className="container mx-auto p-8 md:px-32 md:pt-16 h-full flex flex-col flex-1">
           <header className="mb-8 flex justify-between items-center">
-            <Link href="/" className="text-2xl uppercase font-light">
-              Harry Grumbar
-            </Link>
+            <h1 className="text-2xl uppercase font-light">
+              <Link href="/">Harry Grumbar</Link>
+            </h1>
             <SiteNav />
           </header>
           <main>{children}</main>

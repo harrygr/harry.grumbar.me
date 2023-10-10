@@ -17,8 +17,8 @@ const Home = () => {
   return (
     <article className="prose">
       <p>
-        Hi, I'm Harry, a London-based product engineer who loves using
-        technology to build incredible products that people love to use.
+        Hi, I'm Harry, a London-based product engineer and technical co-founder
+        who loves to build tech products that enhance peoples' lives.
       </p>
 
       <p>

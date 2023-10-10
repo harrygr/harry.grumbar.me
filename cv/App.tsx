@@ -19,7 +19,7 @@ export function App() {
 
           <h2 id="experience">Experience</h2>
 
-          <Section date="May 2022 - Dec 2022" location="Scan.com">
+          <Section date="May 2022 - Present" location="Scan.com">
             <Scan />
           </Section>
 
