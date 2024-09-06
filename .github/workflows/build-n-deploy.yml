@@ -52,6 +52,7 @@ jobs:
         with:
           name: cv-pdf
           path: public/cv.pdf
+      - run: ls -lah public
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl agent start
       - run: flyctl deploy --remote-only
