@@ -27,6 +27,8 @@ RUN npm ci --include=dev
 # Copy application code
 COPY --link . .
 
+COPY ./public/cv.pdf ./public/cv.pdf
+
 # Build application
 RUN npm run build
 
