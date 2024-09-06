@@ -1,0 +1,60 @@
+name: Build n Deploy
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.14.0"
+          cache: "npm"
+      - run: npm install
+      - name: Check types
+        run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run build-cv
+      - name: Upload generated CV PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: public/cv.pdf
+
+  deploy:
+    needs: [build]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    # Only run one deployment at a time per PR.
+    concurrency:
+      group: pr-${{ github.event.number }}-${{ github.event.repository.name }}
+
+    environment:
+      name: production
+      url: ${{ steps.get-deploy-hostname.outputs.url }}
+
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      FLY_REGION: lhr
+      FLY_ORG: ${{ secrets.FLY_ORG }}
+
+    steps:
+      - name: Install jq tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install jq
+      - uses: actions/checkout@v4
+      - name: Download generated CV PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: cv-pdf
+          path: public/cv.pdf
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl agent start
+      - run: flyctl deploy --remote-only
+
+      - run: echo "url=https://$(flyctl status --json | jq -r .Hostname)" >> "$GITHUB_OUTPUT"
+        id: get-deploy-hostname
