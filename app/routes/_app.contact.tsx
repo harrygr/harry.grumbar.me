@@ -1,4 +1,11 @@
+import { HeadersFunction } from "@remix-run/node";
 import { MetaFunction } from "@remix-run/react";
+
+export const headers: HeadersFunction = () => {
+  return {
+    "Cache-Control": "max-age=300, s-maxage=1, stale-while-revalidate=8600",
+  };
+};
 
 export const meta: MetaFunction = () => [
   { name: "title", content: "Harry Grumbar | Contact" },

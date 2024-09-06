@@ -1,6 +1,13 @@
 import { Project } from "~/components/Project";
 import matchhausThumb from "~/assets/matchhaus.png";
 import wordboiThumb from "~/assets//wordboi.svg";
+import { HeadersFunction } from "@remix-run/node";
+
+export const headers: HeadersFunction = () => {
+  return {
+    "Cache-Control": "max-age=300, s-maxage=1, stale-while-revalidate=8600",
+  };
+};
 
 export const metadata = {
   title: "Harry Grumbar | Projects",

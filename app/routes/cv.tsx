@@ -1,4 +1,4 @@
-import { LinksFunction } from "@remix-run/node";
+import { HeadersFunction, LinksFunction } from "@remix-run/node";
 import { AboutMe } from "~/components/cv/AboutMe";
 import { Bulb } from "~/components/cv/experience/Bulb";
 import { Goodlord } from "~/components/cv/experience/Goodlord";
@@ -7,6 +7,12 @@ import { Scan } from "~/components/cv/experience/Scan";
 import { Section } from "~/components/cv/Section";
 import { IconListItem } from "~/components/IconListItem";
 import "~/styles/cv.css";
+
+export const headers: HeadersFunction = () => {
+  return {
+    "Cache-Control": "max-age=300, s-maxage=1, stale-while-revalidate=8600",
+  };
+};
 
 export const links: LinksFunction = () => [
   {
