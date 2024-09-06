@@ -41,7 +41,11 @@ const CV = () => {
 
             <h2 id="experience">Experience</h2>
 
-            <Section date="May 2022 - Present" location="Scan.com">
+            <Section
+              date="May 2022 - July 2024"
+              location="Scan.com"
+              title="Software Engineering Consultant"
+            >
               <Scan />
             </Section>
 
@@ -89,10 +93,15 @@ const CV = () => {
             <h2 id="skills-and-interests">Skills and Interests</h2>
 
             <p>
-              I&apos;m a keen sportsman and particularly enjoy cycling, tennis,
-              hockey and football. I love the outdoors; one of my passions is
-              backcountry skiing & ski-mountaineering and exploring wild and
-              extreme locations.
+              I love the outdoors. Amoung my passions is backcountry skiing,
+              ski-mountaineering, trail running and mountain sports in general.
+              I&apos;ve climbed several 4000ers in the Alps; Mont Blanc and the
+              Matterhorn being among them. I like to keep fit and healthy when
+              not building tech products.
+            </p>
+            <p>
+              I also enjoy other sports such as football, tennis and road
+              cycling.
             </p>
           </main>
           <aside className="cell" style={{ paddingLeft: 10 }}>
@@ -117,9 +126,11 @@ const CV = () => {
 
             <ul>
               <li>JavaScript/TypeScript/Node</li>
+              <li>Ruby/Rails</li>
               <li>React/Next.js/Remix</li>
               <li>Kubernetes</li>
               <li>Elixir/Phoenix</li>
+              <li>Relational databases incl. PostgreSQL/MySQL</li>
               <li>GraphQL/REST API design</li>
               <li>Docker</li>
               <li>Git</li>

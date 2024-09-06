@@ -51,7 +51,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: cv-pdf
-          path: public/cv.pdf
+          path: public
       - run: ls -lah public
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl agent start
