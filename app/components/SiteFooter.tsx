@@ -1,4 +1,5 @@
 import * as React from "react";
+import { $path } from "remix-routes";
 
 interface Props {
   className?: string;
@@ -37,7 +38,7 @@ export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
             </a>
           </li>
           <li className="inline-block">
-            <a href="/cv" target="_blank">
+            <a href={$path("/cv")} target="_blank" rel="noreferrer">
               CV
             </a>
           </li>
