@@ -16,11 +16,11 @@ export const SiteFooter: React.FC<Props> = ({ className = "" }) => {
         <ul className="space-x-4">
           <li className="inline-block">
             <a
-              href="https://twitter.com/harrygrumbar"
+              href="https://www.linkedin.com/in/harry-grumbar/"
               target="_blank"
               rel="noreferrer"
             >
-              Twitter
+              LinkedIn
             </a>
           </li>
           <li className="inline-block">
