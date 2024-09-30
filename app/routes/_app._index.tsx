@@ -50,19 +50,12 @@ const Home = () => {
       </p>
 
       <p>
-        In a previous role I worked at{" "}
-        <a
-          href="https://bulb.co.uk"
-          target="_blank"
-          title="Bulb"
-          rel="noreferrer"
-        >
-          Bulb
-        </a>{" "}
-        when it was the fastest growing company in the UK. I spent over 3 years
-        building Bulb&apos;s core member-facing products, new payment systems,
-        security &amp; fraud prevention, and revenue assurance automation as the
-        company went through a period of hyper-growth.
+        In a previous role I worked at Bulb when it was the fastest growing
+        company in the UK and became one of the country&apos;s largest energy
+        suppliers. I spent over 3 years building Bulb&apos;s core member-facing
+        products, new payment systems, security &amp; fraud prevention, and
+        revenue assurance automation as the company went through a period of
+        hyper-growth.
       </p>
 
       <p>
