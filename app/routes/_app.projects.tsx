@@ -1,7 +1,7 @@
 import { Project } from "~/components/Project";
 import matchhausThumb from "~/assets/matchhaus.png";
 import wordboiThumb from "~/assets//wordboi.svg";
-import { HeadersFunction } from "@remix-run/node";
+import { HeadersFunction, MetaFunction } from "@remix-run/node";
 
 export const headers: HeadersFunction = () => {
   return {
@@ -9,10 +9,13 @@ export const headers: HeadersFunction = () => {
   };
 };
 
-export const metadata = {
-  title: "Harry Grumbar | Projects",
-  description: "Projects that Harry has created and worked or",
-};
+export const meta: MetaFunction = () => [
+  {
+    title: "Harry Grumbar | Projects",
+    name: "description",
+    content: "Projects that Harry has created and worked on",
+  },
+];
 
 const Projects = () => {
   return (

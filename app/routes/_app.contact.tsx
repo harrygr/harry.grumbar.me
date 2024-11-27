@@ -8,7 +8,7 @@ export const headers: HeadersFunction = () => {
 };
 
 export const meta: MetaFunction = () => [
-  { name: "title", content: "Harry Grumbar | Contact" },
+  { title: "Harry Grumbar | Contact" },
   { name: "description", content: "How to contact Harry Grumbar" },
 ];
 

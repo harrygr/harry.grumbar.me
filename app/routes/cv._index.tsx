@@ -1,4 +1,4 @@
-import { HeadersFunction, LinksFunction } from "@remix-run/node";
+import { HeadersFunction, LinksFunction, MetaFunction } from "@remix-run/node";
 import { AboutMe } from "~/components/cv/AboutMe";
 import { Bulb } from "~/components/cv/experience/Bulb";
 import { Goodlord } from "~/components/cv/experience/Goodlord";
@@ -13,6 +13,8 @@ export const headers: HeadersFunction = () => {
     "Cache-Control": "max-age=300, s-maxage=1, stale-while-revalidate=8600",
   };
 };
+
+export const meta: MetaFunction = () => [{ title: "Harry Grumbar | CV" }];
 
 export const links: LinksFunction = () => [
   {
