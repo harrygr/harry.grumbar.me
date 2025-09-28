@@ -1,6 +1,7 @@
 import { HeadersFunction, LinksFunction, MetaFunction } from "@remix-run/node";
 import { AboutMe } from "~/components/cv/AboutMe";
 import { Bulb } from "~/components/cv/experience/Bulb";
+import { Capi } from "~/components/cv/experience/Capi";
 import { Goodlord } from "~/components/cv/experience/Goodlord";
 import { Matchhaus } from "~/components/cv/experience/Matchhaus";
 import { Scan } from "~/components/cv/experience/Scan";
@@ -42,11 +43,18 @@ const CV = () => {
             <hr />
 
             <h2 id="experience">Experience</h2>
+            <Section
+              title="Contract Senior Product Engineer"
+              date="January 2025 - October 2025"
+              location="Capi"
+            >
+              <Capi />
+            </Section>
 
             <Section
               date="May 2022 - July 2024"
               location="Scan.com"
-              title="Software Engineering Consultant"
+              title="Contract Senior Product Engineer"
             >
               <Scan />
             </Section>
@@ -95,21 +103,23 @@ const CV = () => {
             <h2 id="skills-and-interests">Skills and Interests</h2>
 
             <p>
-              I love the outdoors. Amoung my passions is backcountry skiing,
-              ski-mountaineering, trail running and mountain sports in general.
-              I&apos;ve climbed several 4000ers in the Alps; Mont Blanc and the
-              Matterhorn being among them. I like to keep fit and healthy when
-              not building tech products.
+              When I&apos;m not working on tech products you&apos;ll find me in
+              the mountains. I greatly enjoy backcountry skiing, ski &
+              classic-mountaineering, trail running and mountain activities that
+              demand careful planning and decision-making under pressure.
+              I&apos;ve climbed several Alpine 4000ers unguided, including Mont
+              Blanc and the Matterhorn, which taught me a lot about managing
+              complex challenges and calculated risk-taking.
             </p>
             <p>
-              I also enjoy other sports such as football, tennis and road
-              cycling.
+              I also play football and tennis, cycle long distances, and enjoy
+              working with my hands on carpentry and DIY projects, which
+              satisfies my love of building things outside of software.
             </p>
           </main>
           <aside className="cell" style={{ paddingLeft: 10 }}>
             <h2 id="contact">Contact</h2>
             <ul className="list-reset" style={{ listStyleType: "none" }}>
-              <IconListItem icon="map-marker">London, UK</IconListItem>
               <IconListItem icon="envelope-o">harry@grumbar.me</IconListItem>
               <IconListItem icon="globe">
                 <a href="https://harry.grumbar.me">harry.grumbar.me</a>
