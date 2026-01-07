@@ -1,5 +1,4 @@
-import { HeadersFunction } from "@remix-run/node";
-import { MetaFunction } from "@remix-run/react";
+import type { HeadersFunction, MetaFunction } from "react-router";
 
 export const headers: HeadersFunction = () => {
   return {

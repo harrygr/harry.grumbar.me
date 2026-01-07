@@ -1,4 +1,4 @@
-import type { HeadersFunction, MetaFunction } from "@remix-run/node";
+import type { HeadersFunction, MetaFunction } from "react-router";
 import { differenceInYears } from "date-fns/differenceInYears";
 import { useMemo } from "react";
 

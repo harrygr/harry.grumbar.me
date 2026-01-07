@@ -1,5 +1,5 @@
-import { Links, Meta, Outlet } from "@remix-run/react";
-import { LinksFunction } from "@remix-run/node";
+import { Links, Meta, Outlet } from "react-router";
+import type { LinksFunction } from "react-router";
 
 export const links: LinksFunction = () => [
   { rel: "icon", href: "/favicon.svg", type: "image/svg" },

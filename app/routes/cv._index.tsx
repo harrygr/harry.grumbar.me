@@ -1,4 +1,4 @@
-import { HeadersFunction, LinksFunction, MetaFunction } from "@remix-run/node";
+import type { HeadersFunction, LinksFunction, MetaFunction } from "react-router";
 import { AboutMe } from "~/components/cv/AboutMe";
 import { Bulb } from "~/components/cv/experience/Bulb";
 import { Capi } from "~/components/cv/experience/Capi";

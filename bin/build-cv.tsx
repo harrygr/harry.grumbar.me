@@ -17,7 +17,7 @@ const wait = (ms: number) =>
 const port = 4006;
 const startApp = async () => {
   console.log("Starting app server...");
-  const server = execa("remix-serve", ["./build/server/index.js"], {
+  const server = execa("react-router-serve", ["./build/server/index.js"], {
     env: {
       PORT: port.toString(),
       BASE_URL: `http://localhost:${port}`,

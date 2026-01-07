@@ -1,7 +1,7 @@
 import { Project } from "~/components/Project";
 import matchhausThumb from "~/assets/matchhaus.png";
 import wordboiThumb from "~/assets//wordboi.svg";
-import { HeadersFunction, MetaFunction } from "@remix-run/node";
+import type { HeadersFunction, MetaFunction } from "react-router";
 
 export const headers: HeadersFunction = () => {
   return {

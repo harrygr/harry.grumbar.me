@@ -4,9 +4,9 @@
 ARG NODE_VERSION=20.11.1
 FROM node:${NODE_VERSION}-slim as base
 
-LABEL fly_launch_runtime="Remix"
+LABEL fly_launch_runtime="React Router"
 
-# Remix app lives here
+# React Router app lives here
 WORKDIR /app
 
 # Set production environment
@@ -27,7 +27,9 @@ RUN npm ci --include=dev
 # Copy application code
 COPY --link . .
 
-COPY ./public/cv.pdf ./public/cv.pdf
+# Copy CV if it exists (optional - will be in public/ from above COPY if generated)
+# If cv.pdf doesn't exist locally, it can be generated post-deployment
+# COPY ./public/cv.pdf ./public/cv.pdf
 
 # Build application
 RUN npm run build
