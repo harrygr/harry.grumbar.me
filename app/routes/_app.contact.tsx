@@ -32,7 +32,7 @@ const Contact = () => {
             <a href="mailto:harry@grumbar.me">Email me</a>
           </li>
           <li>
-            <a href="https://twitter.com/harrygrumbar">Twitter</a>
+            <a href="https://www.linkedin.com/in/harry-grumbar/">LinkedIn</a>
           </li>
           <li>
             <a href="https://github.com/harrygr">Github</a>
