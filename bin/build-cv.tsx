@@ -53,7 +53,7 @@ const startApp = async () => {
 const main = async () => {
   console.log("📇 Building CV...");
 
-  const outputDirectory = path.resolve(__dirname, "../public");
+  const outputDirectory = path.resolve(import.meta.dirname, "../public");
   if (!fs.existsSync(outputDirectory)) {
     fs.mkdirSync(outputDirectory);
   }
